@@ -1,34 +1,31 @@
 class Person:
-    def __init__(self,name,gender,profession) -> None:
+    def __init__(self,name:str,gender:str,profession:str,study:str) -> None:
         self.name = name
         self.gender = gender
         self.profession = profession
-        self.study = 0
+        self.study = study
         
    
     def work(self):
         print(f'{self.name} working as a {self.profession}')
     
-    def study(self,hours):
-        self.study = hours
+    
    
     def show(self):
         print(f'Name:{self.name} Gender:{self.gender} Profession:{self.profession} Study:{self.study}')
         
 
 #person1
-jessa = Person('Jessa','Female','Software Engineer')
+jessa = Person('Jessa','Female','Software Engineer',0)
 jessa.work()
 jessa.show()
 
 #person2
-jon = Person('Jon','male','Doctor')
+jon = Person('Jon','male','Doctor',15)
 jon.work()
-jon.study = 15
 jon.show()
 
 #person3
-Lisa = Person('Lisa','Female','Korean Singer')
-Lisa.study = 10
+Lisa = Person('Lisa','Female','Korean Singer',10)
 Lisa.work()
 Lisa.show()
