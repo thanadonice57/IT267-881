@@ -5,6 +5,6 @@ print(f'sqrt of 5 = {sqrt(5)}')
 print(f'circle area = {circle_area(2):,.2f}')
 
 #วิธีที่2
-import my_math
-print(f'sqrt of 5 = {sqrt(5)}')
-print(f'circle area = {circle_area(2):,.2f}')
+import my_math as my
+print(f'sqrt of 5 = {my.sqrt(5)}')
+print(f'circle area = {my.circle_area(2):,.2f}')
