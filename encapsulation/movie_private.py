@@ -40,7 +40,7 @@ if __name__ == '__main__':
     #m1.__getmovie_detail() #error
     #เรียก private method ผ่านทาง super class
     #obj._className__privateMethod()
-    #m1._Movie__getmovie_detail()
+    m1._Movie__getmovie_detail()
     m1.print_detail()
         
     
